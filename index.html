@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yessm Holidays — Handcrafted Trips from India</title>
+  <meta name="description" content="Yessm Holidays crafts hassle‑free, value‑packed holidays across India & Southeast Asia. Custom itineraries, visa & flights, hotels, activities, and 24×7 support." />
+  <meta name="keywords" content="Yessm Holidays, travel agency India, custom tours, Sri Lanka trip, Thailand package, Malaysia tour, Singapore holiday, Philippines tour, visa assistance, honeymoon packages, family travel" />
+  <meta property="og:title" content="Yessm Holidays — Handcrafted Trips from India" />
+  <meta property="og:description" content="Custom itineraries, great deals, and reliable support for your next escape." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="yessm-logo.png" />
+  <meta property="og:url" content="https://yessm.in" />
+  <link rel="icon" href="yessm-logo.png" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 600: '#0b957a', 700: '#0a7863' },
+            accent: { 600: '#f16244', 700: '#d84b2e' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial; color:#0f172a; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 16px; }
+    .btn { display:inline-block; padding:12px 16px; border-radius:14px; text-decoration:none; }
+    .btn-primary { background:#0b957a; color:#fff; }
+    .card { border:1px solid #e2e8f0; border-radius:16px; padding:24px; background:#fff; }
+    .hidden { display:none; }
+  </style>
+</head>
+<body class="antialiased text-slate-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-100">
+    <div class="container">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-3">
+          <img src="yessm-logo.png" alt="Yessm Holidays" class="h-9 w-9 rounded" />
+          <span class="font-semibold text-lg tracking-tight">Yessm Holidays</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#destinations" class="hover:text-brand-600">Destinations</a>
+          <a href="#about" class="hover:text-brand-600">About</a>
+          <a href="#services" class="hover:text-brand-600">Services</a>
+          <a href="#deals" class="hover:text-brand-600">Deals</a>
+          <a href="#testimonials" class="hover:text-brand-600">Reviews</a>
+          <a href="#enquiry" class="hover:text-brand-600">Enquiry</a>
+          <a href="#contact" class="hover:text-brand-600">Contact</a>
+        </nav>
+        <a href="#enquiry" class="hidden md:inline-block btn btn-primary">Plan My Trip</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-200" aria-label="Open Menu">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-100">
+      <div class="px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#destinations" class="hover:text-brand-600">Destinations</a>
+        <a href="#about" class="hover:text-brand-600">About</a>
+        <a href="#services" class="hover:text-brand-600">Services</a>
+        <a href="#deals" class="hover:text-brand-600">Deals</a>
+        <a href="#testimonials" class="hover:text-brand-600">Reviews</a>
+        <a href="#enquiry" class="hover:text-brand-600">Enquiry</a>
+        <a href="#contact" class="hover:text-brand-600">Contact</a>
+        <a href="#enquiry" class="btn btn-primary text-center">Plan My Trip</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative isolate">
+    <div class="absolute inset-0 -z-10">
+      <img src="https://images.unsplash.com/photo-1483683804023-6ccdb62f86ef?q=80&w=1600&auto=format&fit=crop" alt="Beach sunset" class="w-full h-[72vh] object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
+    </div>
+    <div class="container h-[72vh] flex items-center">
+      <div class="max-w-2xl text-white">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 mb-4 text-xs">Trusted Indian Travel Brand</div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">Handcrafted Holidays from India to Sri Lanka & Southeast Asia</h1>
+        <p class="mt-4 text-lg text-white/90">Custom itineraries, fair pricing, and end‑to‑end support—so you can just say <span class="font-semibold">“Yessm!”</span> to your next trip.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#enquiry" class="px-5 py-3 rounded-2xl bg-accent-600 text-white hover:bg-accent-700">Get a Free Itinerary</a>
+          <a href="https://wa.me/916382320620" class="px-5 py-3 rounded-2xl bg-white/90 text-slate-900 hover:bg-white">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section id="destinations" class="py-16">
+    <div class="container">
+      <h2 class="text-3xl font-bold">Popular Destinations</h2>
+      <p class="mt-2 text-slate-600">Handpicked routes our guests love.</p>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <a href="#enquiry" class="card hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=1200&auto=format&fit=crop" alt="Thailand - Phuket" class="h-56 w-full object-cover rounded-lg mb-3"/>
+          <div class="font-semibold">Thailand: Phuket + Bangkok</div>
+          <div class="text-sm text-slate-600">Beaches • Nightlife • Temples</div>
+        </a>
+        <a href="#enquiry" class="card hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?q=80&w=1200&auto=format&fit=crop" alt="Singapore - Marina Bay" class="h-56 w-full object-cover rounded-lg mb-3"/>
+          <div class="font-semibold">Singapore</div>
+          <div class="text-sm text-slate-600">Cityscapes • Family Fun</div>
+        </a>
+        <a href="#enquiry" class="card hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop" alt="Sri Lanka - Stilt Fishermen" class="h-56 w-full object-cover rounded-lg mb-3"/>
+          <div class="font-semibold">Sri Lanka: Colombo • Galle • Jaffna</div>
+          <div class="text-sm text-slate-600">Culture • Coasts • Cuisine</div>
+        </a>
+        <a href="#enquiry" class="card hover:shadow-md transition">
+          <img src="https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Malaysia - Petronas Towers" class="h-56 w-full object-cover rounded-lg mb-3"/>
+          <div class="font-semibold">Malaysia: KL • Langkawi • Penang</div>
+          <div class="text-sm text-slate-600">Food • Islands • City Breaks</div>
+        </a>
+        <a href="#enquiry" class="card hover:shadow-md transition">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="Philippines - Palawan, El Nido" class="h-56 w-full object-cover rounded-lg mb-3"/>
+          <div class="font-semibold">Philippines: Palawan • Cebu • Manila</div>
+          <div class="text-sm text-slate-600">Islands • Diving • Lagoons</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About (rearranged) -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container">
+      <h2 class="text-3xl font-bold">About Yessm Holidays</h2>
+      <p class="mt-4 text-slate-700 max-w-3xl">Yessm Holidays is an Indian travel brand built on a simple motto: <span class="font-semibold italic">everyone can travel</span>. We craft practical, value‑packed trips with honest pricing and real human support from planning to touchdown.</p>
+
+      <div class="mt-10 grid gap-8 md:grid-cols-2">
+        <!-- LEFT: Our Story + What We Stand For (elaborated) -->
+        <div class="space-y-6">
+          <div class="p-6 rounded-2xl border border-slate-200">
+            <h3 class="font-semibold text-lg">Our Story</h3>
+            <p class="mt-2 text-sm text-slate-700">Started by <strong>Saran Pandiyan</strong>, Yessm grew from hands‑on travel across Asia—turning personal itineraries into reliable packages for families, couples, and teams.</p>
+            <p class="mt-2 text-sm text-slate-700">Backpacked across the Philippines, Malaysia, Singapore, and Sri Lanka to understand their culture, food, logistics, and local rhythms—insights that shape every itinerary we build.</p>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
+            <h3 class="font-semibold text-lg">What We Stand For</h3>
+            <ul class="mt-3 text-sm text-slate-700 list-disc pl-5 space-y-2">
+              <li><strong>Transparent pricing</strong> — clear inclusions, no surprise add‑ons.</li>
+              <li><strong>Local authenticity</strong> — experiences led by verified local partners, not tourist traps.</li>
+              <li><strong>Comfort with value</strong> — handpicked stays that balance quality, location, and budget.</li>
+              <li><strong>Responsible travel</strong> — respect for culture, communities, and the environment.</li>
+              <li><strong>Human support</strong> — 24×7 help via WhatsApp and phone throughout your trip.</li>
+              <li><strong>Tailored planning</strong> — itineraries matched to your vibe (honeymoon, family, or corporate).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- RIGHT: Founder & Co‑Founder notes stacked -->
+        <div class="space-y-6">
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
+            <h3 class="font-semibold text-lg">Founder’s Note</h3>
+            <blockquote class="mt-3 text-slate-700 text-sm leading-relaxed">“Everyone can travel. I started Yessm to make trips simple, safe, and fairly priced.”</blockquote>
+            <div class="mt-2 text-sm font-medium">— Saran Pandiyan, Founder, Yessm Group of Companies</div>
+          </div>
+
+          <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50">
+            <h3 class="font-semibold text-lg">Co‑Founder’s Note</h3>
+            <blockquote class="mt-3 text-slate-700 text-sm leading-relaxed">“Having lived in the Philippines and Sri Lanka, I had the opportunity to experience their cultures closely — their warmth, food, and ways of life. Those journeys inspired us to create Yessm Holidays, a brand that celebrates authentic travel.”</blockquote>
+            <div class="mt-2 text-sm font-medium">— Miel, Co‑Founder, Yessm Holidays</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16" style="background:#f8fafc">
+    <div class="container">
+      <h2 class="text-3xl font-bold">What We Do</h2>
+      <p class="mt-2 text-slate-600">End‑to‑end travel planning with a personal touch.</p>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="p-6 bg-white rounded-2xl shadow"><h3 class="font-semibold text-lg">Custom Itineraries</h3><p class="mt-2 text-sm text-slate-600">Day‑by‑day plans tailored to your vibe and budget.</p></div>
+        <div class="p-6 bg-white rounded-2xl shadow"><h3 class="font-semibold text-lg">Flights, Hotels & Transfers</h3><p class="mt-2 text-sm text-slate-600">Bookings with verified partners and clear inclusions.</p></div>
+        <div class="p-6 bg-white rounded-2xl shadow"><h3 class="font-semibold text-lg">Visas & Insurance</h3><p class="mt-2 text-sm text-slate-600">Hassle‑free documentation and guidance.</p></div>
+        <div class="p-6 bg-white rounded-2xl shadow"><h3 class="font-semibold text-lg">Activities & Experiences</h3><p class="mt-2 text-sm text-slate-600">Island hopping, dinner cruises, safaris, massages.</p></div>
+        <div class="p-6 bg-white rounded-2xl shadow"><h3 class="font-semibold text-lg">24×7 Traveller Support</h3><p class="mt-2 text-sm text-slate-600">Real humans on call for any hiccups.</p></div>
+        <div class="p-6 bg-white rounded-2xl shadow"><h3 class="font-semibold text-lg">Corporate & Group Travel</h3><p class="mt-2 text-sm text-slate-600">Off‑sites to incentive tours with negotiated rates.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals -->
+  <section id="deals" class="py-16">
+    <div class="container">
+      <h2 class="text-3xl font-bold">Featured Deals</h2>
+      <p class="mt-2 text-slate-600">Limited‑time values from Chennai & Bengaluru departures.</p>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <div class="text-lg font-semibold">Phuket 3N + Bangkok 2N</div>
+          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside">
+            <li>Flights + 4★ Hotels + Transfers</li>
+            <li>Phi Phi tour • Big Buddha • Safari World</li>
+          </ul>
+          <div class="mt-4 flex items-end justify-between">
+            <div><div class="text-xs text-slate-500">From</div><div class="text-xl font-bold">₹49,999<span class="text-sm font-normal">/person</span></div></div>
+            <a href="#enquiry" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Enquire</a>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <div class="text-lg font-semibold">Sri Lanka 5N: Colombo • Galle • Bentota</div>
+          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside">
+            <li>Private car • Handpicked stays</li>
+            <li>Galle Fort • Turtle hatchery • River safari</li>
+          </ul>
+          <div class="mt-4 flex items-end justify-between">
+            <div><div class="text-xs text-slate-500">From</div><div class="text-xl font-bold">₹39,999<span class="text-sm font-normal">/person</span></div></div>
+            <a href="#enquiry" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Enquire</a>
+          </div>
+        </div>
+        <div class="p-6 rounded-2xl border border-slate-200">
+          <div class="text-lg font-semibold">Singapore 4N Family Special</div>
+          <ul class="mt-2 text-sm text-slate-600 list-disc list-inside">
+            <li>Universal Studios • Night Safari • Sentosa</li>
+            <li>Airport transfers • Breakfasts</li>
+          </ul>
+          <div class="mt-4 flex items-end justify-between">
+            <div><div class="text-xs text-slate-500">From</div><div class="text-xl font-bold">₹64,999<span class="text-sm font-normal">/person</span></div></div>
+            <a href="#enquiry" class="px-4 py-2 rounded-xl bg-brand-600 text-white hover:bg-brand-700">Enquire</a>
+          </div>
+        </div>
+      </div>
+      <p class="mt-3 text-xs text-slate-500">*Prices are indicative and vary by dates, hotels, and flight availability.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-slate-50">
+    <div class="container">
+      <h2 class="text-3xl font-bold">Traveller Reviews</h2>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="p-6 bg-white rounded-2xl shadow"><p class="text-slate-700">“Smooth planning and on‑time pickups. The dinner cruise in Bangkok was the highlight. Highly recommend Yessm!”</p><div class="mt-3 text-sm text-slate-500">— Priya & Karthik, Chennai</div></div>
+        <div class="p-6 bg-white rounded-2xl shadow"><p class="text-slate-700">“Great value for our Sri Lanka circuit. Clean hotels, friendly driver, and quick WhatsApp support.”</p><div class="mt-3 text-sm text-slate-500">— Ahmed Family, Bengaluru</div></div>
+        <div class="p-6 bg-white rounded-2xl shadow"><p class="text-slate-700">“They customised activities around our toddler—zero stress. Will book again with Yessm Holidays.”</p><div class="mt-3 text-sm text-slate-500">— Swathi, Hyderabad</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Enquiry -->
+  <section id="enquiry" class="py-16">
+    <div class="container">
+      <div class="p-8 rounded-3xl shadow-lg" style="background:rgba(255,255,255,0.9)">
+        <h2 class="text-3xl font-bold">Plan Your Trip</h2>
+        <p class="mt-2 text-slate-600">Share a few details—we’ll send a custom plan within 24 hours.</p>
+        <form id="enquiryForm" class="mt-6 grid gap-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input type="text" placeholder="Full Name" required class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+            <input type="tel" placeholder="Phone / WhatsApp" required class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input type="email" placeholder="Email" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+            <input type="text" placeholder="From City (e.g., Chennai)" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+          </div>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <input type="text" placeholder="Destination (e.g., Phuket + Bangkok)" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+            <input type="text" placeholder="Dates (e.g., 20–25 Dec)" class="w-full rounded-xl border border-slate-300 px-4 py-3" />
+          </div>
+          <textarea placeholder="No. of travellers, hotel type, budget range, must‑dos…" class="w-full rounded-xl border border-slate-300 px-4 py-3" rows="4"></textarea>
+          <div class="flex items-center gap-3">
+            <button id="emailSubmit" class="px-5 py-3 rounded-2xl bg-brand-600 text-white hover:bg-brand-700" type="button">Email My Enquiry</button>
+            <a id="waSubmit" href="#" class="px-5 py-3 rounded-2xl border border-slate-300">Send on WhatsApp</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-slate-900 text-slate-100">
+    <div class="container grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="flex items-center gap-3">
+          <img src="yessm-logo.png" alt="Yessm Holidays" class="h-10 w-10 rounded" />
+          <div>
+            <div class="font-semibold text-lg">Yessm Holidays</div>
+            <div class="text-sm text-slate-400">Handcrafted trips. Honest pricing.</div>
+          </div>
+        </div>
+        <p class="mt-4 text-sm text-slate-300">From weekend getaways to international escapes, we design travel that feels effortless and unforgettable.</p>
+      </div>
+      <div>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li>Email: <a href="mailto:Saran@yessm.in" class="underline">Saran@yessm.in</a></li>
+          <li>Phone/WhatsApp: <a href="https://wa.me/916382320620" class="underline">+91‑63823 20620</a></li>
+          <li>Offices: Chennai & Pondicherry, India</li>
+          <li>Hours: Mon–Sat, 9:30 AM – 7:00 PM IST</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-3">Useful Links</div>
+        <ul class="space-y-2 text-sm text-slate-300">
+          <li><a href="#services" class="underline">Services</a></li>
+          <li><a href="#deals" class="underline">Featured Deals</a></li>
+          <li><a href="#enquiry" class="underline">Plan Your Trip</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-10 border-t border-slate-800"></div>
+    <div class="container py-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+      <div>© <span id="year"></span> Yessm Holidays. All rights reserved.</div>
+      <div>Made with ❤ for travellers.</div>
+    </div>
+  </section>
+
+  <!-- Single consolidated script -->
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+    // Enquiry wiring
+    const form = document.getElementById('enquiryForm');
+    const emailBtn = document.getElementById('emailSubmit');
+    const waBtn = document.getElementById('waSubmit');
+    function getData() {
+      const inputs = form.querySelectorAll('input, textarea');
+      const [name, phone, email, fromCity, dest, dates, notes] = [
+        inputs[0]?.value || '',
+        inputs[1]?.value || '',
+        inputs[2]?.value || '',
+        inputs[3]?.value || '',
+        inputs[4]?.value || '',
+        inputs[5]?.value || '',
+        inputs[6]?.value || ''
+      ];
+      const text = `New travel enquiry\nName: ${name}\nPhone/WhatsApp: ${phone}\nEmail: ${email}\nFrom: ${fromCity}\nDestination: ${dest}\nDates: ${dates}\nNotes: ${notes}`;
+      return { name, phone, email, fromCity, dest, dates, notes, text };
+    }
+    emailBtn?.addEventListener('click', () => {
+      const d = getData();
+      const subject = encodeURIComponent(`New enquiry – ${d.dest || 'Yessm Holidays'}`);
+      const body = encodeURIComponent(d.text);
+      window.location.href = `mailto:Saran@yessm.in?subject=${subject}&body=${body}`;
+    });
+    waBtn?.addEventListener('click', (e) => {
+      e.preventDefault();
+      const d = getData();
+      const msg = encodeURIComponent(d.text);
+      window.open(`https://wa.me/916382320620?text=${msg}`, '_blank');
+    });
+
+    // Console checks
+    console.assert(!!document.querySelector('#about'), 'About section should exist');
+    console.assert(!!document.querySelector('#services'), 'Services should exist');
+    console.assert(!!document.querySelector('#deals'), 'Deals should exist');
+  </script>
+</body>
+</html>
