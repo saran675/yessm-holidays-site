@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yessm.in/sitemap.xml
